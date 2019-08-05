@@ -12,6 +12,7 @@ class Number {
                 } else {
                     System.out.println("n1 is odd");
                 }
+                System.out.println("n1 post if");
                 
             } else {
                 largestNumber = n3;
@@ -20,7 +21,9 @@ class Number {
                 } else {
                     System.out.println("n3 is odd");
                 }
+                System.out.println("n3 post else");
             }
+            System.out.println("inner post if");
         } else {
             System.out.println("First Level else");    
             if (n2 >= n3) {
@@ -30,6 +33,7 @@ class Number {
                 } else {
                     System.out.println("n2 is odd");
                 }
+                System.out.println("n2 post if");
             } else {
                 largestNumber = n3;
                 if (n1 % 3 == 0){
@@ -37,7 +41,9 @@ class Number {
                 } else {
                     System.out.println("n3 is odd");
                 }
+                System.out.println("n3 post else");
             }
+            System.out.println("inner post else");
         }
 
         System.out.println("Largest number is " + largestNumber);
