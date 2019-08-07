@@ -4,12 +4,17 @@ class Sample
 public static int minFunction(int n1, int n2) {
    int min;
    if (n1 > n2)
+   {
       min = n2;
+   }
    else
+   {
       min = n1;
+   }
 
    return min; 
 }
+ //parameterized constructor
 int age;   
    Sample(int age) {
       this.age = age;	
@@ -20,13 +25,13 @@ public static void main(String [] args)
 private static final String REGEX = "\\bcat\\b";
 private static final String INPUT = "cat cat cat cattie cat";
 Pattern p = Pattern.compile(REGEX);
-      Matcher m = p.matcher(INPUT); 
+Matcher m = p.matcher(INPUT); 
 //calling method
 int c = minFunction(a, b);
 
 //File operations
 FileInputStream in = null;
-      FileOutputStream out = null;
+FileOutputStream out = null;
       try {
          in = new FileInputStream("input.txt");
          out = new FileOutputStream("output.txt");
@@ -39,12 +44,14 @@ FileInputStream in = null;
    catch (ArrayIndexOutOfBoundsException e) {
          System.out.println("Exception thrown  :" + e);
       }
-   finally {
+   finally
+        {
          if (in != null) {
             in.close();
          }
          if (out != null) {
             out.close();
+         }
          }
          //exceptions
          try {
